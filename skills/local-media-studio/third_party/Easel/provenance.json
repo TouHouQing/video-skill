@@ -1,0 +1,128 @@
+{
+  "repository": "https://github.com/ZJU-REAL/Easel",
+  "commit": "5a597e5f3ef5b01098b53f36caf719dd9a32b7bf",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "scripts/vendor/easel/video_ops.py",
+      "upstream_path": "skills/shared/scripts/video_ops.py",
+      "upstream_sha256": "fce6b6b769560ff8e3890671a5f7ea8a162397c9cc9a404547b7b88858361376",
+      "changes": [],
+      "local_sha256": "34af7b14d8c86627b57f781089481de7cc080f1a62c1e9af3061608a63d46024",
+      "copied_from_checkout_sha256": "34af7b14d8c86627b57f781089481de7cc080f1a62c1e9af3061608a63d46024"
+    },
+    {
+      "path": "scripts/vendor/easel/audio_ops.py",
+      "upstream_path": "skills/shared/scripts/audio_ops.py",
+      "upstream_sha256": "3f9ed899fb42fe8829ac46ff40499d977e54b949b06421d545ec353bc1c185ea",
+      "changes": [],
+      "local_sha256": "e11b56939350f5a9bc14171a975169fd0f3c88aa441414f9f44677f5d2ea5d59",
+      "copied_from_checkout_sha256": "e11b56939350f5a9bc14171a975169fd0f3c88aa441414f9f44677f5d2ea5d59"
+    },
+    {
+      "path": "scripts/vendor/easel/image_ops.py",
+      "upstream_path": "skills/shared/scripts/image_ops.py",
+      "upstream_sha256": "be0eee6f7aa5909c7f2476214852d67c83a6e4d55e57f4b1b767aa55c09b8b55",
+      "changes": [],
+      "local_sha256": "b47512ccfe7187a4da0056663ac985166b5856fed72dcfddfb05f2ccf4395dfd",
+      "copied_from_checkout_sha256": "b47512ccfe7187a4da0056663ac985166b5856fed72dcfddfb05f2ccf4395dfd"
+    },
+    {
+      "path": "scripts/vendor/easel/subtitle_ops.py",
+      "upstream_path": "skills/shared/scripts/subtitle_ops.py",
+      "upstream_sha256": "d190eabc5b21aec49d96584bd42126259b0fb92fc3c491fd32d3364ad98e8203",
+      "changes": [
+        "Windows FFmpeg filter paths use forward slashes and escaped drive colon."
+      ],
+      "local_sha256": "7890470e5336db4b5149174f5e33f070d110a67bd84850b910a362afe43d92ad",
+      "copied_from_checkout_sha256": "8a52392a8e3d6a36b5d0ce4afae8e5cc17c680509bed3d4120b903eefe204cd4"
+    },
+    {
+      "path": "scripts/vendor/easel/reframe.py",
+      "upstream_path": "skills/shared/scripts/reframe.py",
+      "upstream_sha256": "4808ca8bf674c76928d8c9e1566e61e921fae807d4b5b824ec21b9129663232d",
+      "changes": [],
+      "local_sha256": "415d4f2cd742011ede37ec30497830c95a9a7d755171174682d2e95742377fa1",
+      "copied_from_checkout_sha256": "415d4f2cd742011ede37ec30497830c95a9a7d755171174682d2e95742377fa1"
+    },
+    {
+      "path": "scripts/vendor/easel/highlight_cut.py",
+      "upstream_path": "skills/shared/scripts/highlight_cut.py",
+      "upstream_sha256": "280373d10b84db1afe2abd0ddfb6e716fc9da357f499c126b0359b5a0389853b",
+      "changes": [],
+      "local_sha256": "550e4831d8a55b0ac9b59b149a4043a2e059f223ec9d9af22886270d660f2cc4",
+      "copied_from_checkout_sha256": "550e4831d8a55b0ac9b59b149a4043a2e059f223ec9d9af22886270d660f2cc4"
+    },
+    {
+      "path": "scripts/vendor/easel/audio_mix.py",
+      "upstream_path": "skills/shared/scripts/audio_mix.py",
+      "upstream_sha256": "67460e322b647aac90caecfcd33a8b2e1cb99fd9eda1a6286ea00f765419b365",
+      "changes": [],
+      "local_sha256": "0732e90e0e0dddea4fc29c3f115790714edacbd42d78a0fdf824d19c433609a9",
+      "copied_from_checkout_sha256": "0732e90e0e0dddea4fc29c3f115790714edacbd42d78a0fdf824d19c433609a9"
+    },
+    {
+      "path": "scripts/vendor/easel/beatsync.py",
+      "upstream_path": "skills/shared/scripts/beatsync.py",
+      "upstream_sha256": "c67509e4c43d2d1dfb1db7c35c05a138a0f4c2a61cbfc4e7a2b1d5f52459749b",
+      "changes": [],
+      "local_sha256": "9ab9c13da01442a5be76c69d4a403d35cd1cd04e5d341e19953489b4acb748d1",
+      "copied_from_checkout_sha256": "9ab9c13da01442a5be76c69d4a403d35cd1cd04e5d341e19953489b4acb748d1"
+    },
+    {
+      "path": "scripts/vendor/easel/chromakey.py",
+      "upstream_path": "skills/shared/scripts/chromakey.py",
+      "upstream_sha256": "6239c40c7f500fe9589129e1e7564136682d6aff61b1dfb93f78075a3109313f",
+      "changes": [],
+      "local_sha256": "76eac3e2199fa3585b83df09fbe5c98d31a49e756cd986f72bdee77434ec87c4",
+      "copied_from_checkout_sha256": "76eac3e2199fa3585b83df09fbe5c98d31a49e756cd986f72bdee77434ec87c4"
+    },
+    {
+      "path": "scripts/vendor/easel/img_enhance.py",
+      "upstream_path": "skills/shared/scripts/img_enhance.py",
+      "upstream_sha256": "d213978083cd988297e4be961fdf73f2644be6e44ab3f9ad2cb37079867d6502",
+      "changes": [],
+      "local_sha256": "1c8292884c157e565107bc60167acaab17cf49cc48382d4478955aa380dea0b3",
+      "copied_from_checkout_sha256": "1c8292884c157e565107bc60167acaab17cf49cc48382d4478955aa380dea0b3"
+    },
+    {
+      "path": "scripts/vendor/easel/asr.py",
+      "upstream_path": "skills/shared/scripts/asr.py",
+      "upstream_sha256": "f9dddbeae9a148baf5abd8c3e5a0e8bb920f05581b6eee66d77d00b5c0522d2f",
+      "changes": [
+        "Independent LOCAL_MEDIA_PROXY and local-media-models cache.",
+        "Offline selftest replaces online Edge TTS plus model download; it does not certify inference."
+      ],
+      "local_sha256": "3f61a5ad22a51ba859eaaaaa29ebc8973685120178e66782ac36fb1cfb67c2eb",
+      "copied_from_checkout_sha256": "40127ca258b5019cd1d73cc19882ac17d0963d829bc053d855e8bc365a99e256"
+    },
+    {
+      "path": "scripts/vendor/easel/wordcount.py",
+      "upstream_path": "skills/shared/scripts/wordcount.py",
+      "upstream_sha256": "67a5be020d330dd32479907cad8de14b728fd9418b557fd64c5638799c92da0d",
+      "changes": [],
+      "local_sha256": "183f74ede25231f2e78a3f8cddf1762d52890bae32beb2e866ec0a8215dc30b9",
+      "copied_from_checkout_sha256": "183f74ede25231f2e78a3f8cddf1762d52890bae32beb2e866ec0a8215dc30b9"
+    },
+    {
+      "path": "scripts/vendor/easel/audio_viz.py",
+      "upstream_path": "skills/shared/scripts/audio_viz.py",
+      "upstream_sha256": "2f804deb0e0c32a448f65055321f9ca1ea6841a3cf3851045ce29827a59fb6d1",
+      "changes": [
+        "Discover Windows Microsoft YaHei; escape font paths for FFmpeg."
+      ],
+      "local_sha256": "73dc94c2c044d79d89c52164074a51bfd3af212447978334e946f3b89b8e60de",
+      "copied_from_checkout_sha256": "2ba3bd1b7783920a403310153ebc40f1599b7f2060773a66d2381646e261fb67"
+    },
+    {
+      "path": "scripts/vendor/easel/intro_outro.py",
+      "upstream_path": "skills/shared/scripts/intro_outro.py",
+      "upstream_sha256": "b7ccd1428915480b04bbb57875020721dd95d12cbb8b84b2d06948c8c7eb6427",
+      "changes": [
+        "Discover Windows Microsoft YaHei; escape font paths for FFmpeg."
+      ],
+      "local_sha256": "ef18374661f554ebfea3807107593788616d799c4e985a5a2078ffff8a6cd7bb",
+      "copied_from_checkout_sha256": "bd6ce16741c6d2ed18165ce9417f2957ad9214942b1bb0ab295f5a02ff12728c"
+    }
+  ]
+}

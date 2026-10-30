@@ -1,0 +1,4 @@
+interface:
+  display_name: "本地媒体工具箱"
+  short_description: "无需 Easel 工作台，本地完成视频剪辑、混音、字幕处理、横转竖和素材加工"
+  default_prompt: "用 $local-media-studio 处理工作区中的素材，按内容选择切点，完成本地剪辑并检查输出。"

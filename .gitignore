@@ -1,0 +1,50 @@
+# Local dependencies and environments
+.runtime/
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.cache/
+*.egg-info/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*cookies*.json
+*cookies*.txt
+*.pem
+*.key
+
+# Workspaces, private account state, and generated deliveries
+/work/
+/outputs/
+/downloads/
+/models/
+/tmp/
+profile.json
+topics.json
+performance.json
+learning.json
+*.log
+
+# Model weights and archives (the original reference WAV is intentionally tracked)
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Editor / OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

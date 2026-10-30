@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/ZJU-REAL/Easel",
+  "commit": "5a597e5f3ef5b01098b53f36caf719dd9a32b7bf",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "scripts/vendor/easel/rss_digest.py",
+      "upstream_path": "skills/builtin/skill-rss-aggregator/scripts/rss_digest.py",
+      "upstream_sha256": "9639b6a454678c9297ffe292f9ef741cfb5ffde06f18498133372a1b20af4555",
+      "changes": [
+        "Independent FREE_AI_VIDEO_PROXY.",
+        "Windows-safe file URI in upstream selftest.",
+        "Recent feed window separates undated leads, excludes future timestamps and reports failed sources."
+      ],
+      "local_sha256": "9de0f0004a7be77a8f7eab718a49ca5d028c3fc32238c0c41e0114623aff339c",
+      "copied_from_checkout_sha256": "d9fe56bc9d23c4291324c25c3791552ed1a370f9352dca5763c284a3878a4a8e"
+    }
+  ]
+}

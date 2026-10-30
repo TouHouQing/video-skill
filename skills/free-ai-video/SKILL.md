@@ -1,0 +1,47 @@
+---
+name: free-ai-video
+description: 面向中文用户发现并核查 AI 热点，完成选题、脚本、真实录屏、素材混剪、中文配音、字幕、封面和发布文案；整合本地媒体工具与内容运营台账，无需 Easel 工作台或付费 API。
+---
+
+# Free AI Video
+
+Use this as the single entrypoint from AI story discovery to a Chinese short video. Codex researches and edits; local scripts record, narrate and render. Deliver MP4, cover, SRT, publishing copy, research, media provenance and editing records. Usual format: 1080×1920, 24 fps, roughly 45–75 seconds; adapt to the task. Length follows supported content. This channel wants substantive news: develop the demonstrated change with relevant comparisons, uses or access facts, rather than compressing every revision to a brief demo and caveats.
+
+## Load only the relevant guidance
+
+| Task | Read |
+|---|---|
+| Current AI news | [News research](references/ai-news.md); model launches also use [model comparisons/pricing](references/model-launch.md) |
+| Chinese narration, hooks, rewrites | [Attention and payoff](references/attention-and-payoff.md) for news angles; [spoken news writing](references/spoken-news-writing.md) to compose continuous speech; [whole-script structure](references/full-script-structure.md) to check development and closure. For human-video analysis or repeated AI-sounding feedback, read [observed human cases](references/human-video-cases.md); then [editorial continuity](references/editorial-continuity.md) for pictures/pacing |
+| Real recordings or montage | [Recording and editing](references/recording-and-editing.md) |
+| Write a production project | [Project fields](references/project-contract.md) and [shots/media](references/shot-contract.md) |
+| Voice setup or tuning | [Local Ming](references/local-tts.md) |
+| Reuse content-ops/media capabilities | [Integration and reuse decisions](references/integrated-workflow.md), then the relevant companion reference |
+
+Do not load every companion skill or run every imported tool for an ordinary video. Keep one `research.json → project.json → measured narration/edit timeline` pipeline. For tutorials, use the plain-language billing/account guidance in the spoken-writing reference: explain an unfamiliar term before asking the viewer to act on it. This channel requires real product-interface screenshots or recordings for tutorial steps, with Chinese explanations; an English documentation walkthrough cannot substitute. The user wants finished videos and covers without added citation/source badges, and explicitly requests removing visible creator watermarks. Preserve original materials and provenance in project records. See the tutorial material rules in [recording and editing](references/recording-and-editing.md).
+
+## Execute the requested stage
+
+Use the Python recorded in `.runtime/runtime.json`. Resolve script paths from this skill. Work in a new job directory; preserve earlier deliveries.
+
+1. **Context.** For this ongoing channel, read `ops brief --workspace <workspace>/work/ai-channel --stage discover|draft|produce|review`; include `--topic-id` when selected. Use `context` only when the full ledger is needed. Profile preferences are authoritative for this channel; explicit task/project settings override them. New ongoing channels can use `ops init`.
+2. **Research.** For AI news, run current web searches and inspect original announcements. `collect --output <job>/candidates.json --hours 72` supplies leads; optional `--hotlists` adds third-party observations. Retain unknown dates, failures and source-coverage limits. Record actual searches, the selection, verified claims and footage plan. Feed scores are not viral probabilities.
+3. **Script and material.** For this growth-oriented channel, use [attention and payoff](references/attention-and-payoff.md) to compare genuinely different evidence-backed angles, select an opening/first-frame combination and identify the new understanding delivered through the body. Use [spoken news writing](references/spoken-news-writing.md) to tell the story in continuous speech, then check its development with [whole-script structure](references/full-script-structure.md). Structure labels and feature lists are editing notes; writing one line per label produces a narrated outline. On revisions, preserve approved passages and rewrite the rejected passage's wording and syntax as a whole; shortening sentences or inserting casual particles does not address the user's repeated feedback. Keep supported information, examine the first weak handoff through the ending, and avoid unanswered test questions as a substitute for a personal voice. Capability, price, rivals and limits are research coverage, not compulsory spoken chapters. Record actual language/fact corrections in the same job's `script-review.md` before TTS, then split scene fields and match spoken ideas to source footage. Chinese providers use domestic official pages/RMB prices; foreign providers retain official native currencies. Verify event/date-led openings.
+4. **Project.** Use `content_type: ai_news` and `research_file` for news; choose screencast/montage/hybrid/motion explicitly. This channel prefers `source_led` news and Ming C / 二次元细声 adult female narration. Set `channel_dir` and, when registered, `topic_id` to inherit preferences and connect the ledger. Add an `evidence_map` tying scene sources/media to what the viewer should notice; see the project contract.
+5. **Draft or produce.** A requested draft first uses `approval_status: awaiting_user` and stops before new topical recording, TTS or MP4 synthesis. Deliver script, shot list and labelled static previews of existing material. Authorized direct production needs no extra approval. `preflight --project <json> --stage draft|produce --output <json>` exposes settings and scene/material handoff without synthesis. Resolve errors and inspect its map before TTS.
+6. **Render and review.** Record real operations/acquire permitted material, then `produce --project <json> --output <dir>`. Inspect encoded sequences, narration/captions, legibility and claim matching; record timestamped corrections. Verified encoding links to its topic as **produced_pending_review**, never as published. Technical checks and material ratios do not establish editorial quality.
+7. **Douyin copy with every finished video.** This channel requires a ready-to-paste Douyin title, description and exactly five relevant hashtag topics whenever a finished video is delivered. Include them directly in the final response alongside the video, and save `抖音发布文案.md` in its output folder. Follow the delivery guidance in [integration and reuse](references/integrated-workflow.md). This is copy preparation, not authorization to publish.
+
+`doctor` checks dependencies; bootstrap only missing components. `capture` makes a still; `record` and `record-native` record actual actions. `autocut` nominates action windows for review. `draft` renders static previews from existing media. `verify` rechecks an encoded video. Detailed parameters live in the linked references and command help.
+
+## Reuse without duplicating work
+
+The main editor already trims, retimes, reframes, highlights and adds captions/transitions on measured narration. Use those shot fields first. Imported tools serve a concrete extra need such as bilingual subtitle conversion, source ASR, sound processing or a separately requested montage. Tracked preprocessing can cache exact results and retain recording lineage; it does not make generated visuals into genuine recordings. Use `media list` and the reuse guide when needed.
+
+Use `ai-content-ops` for positioning, topic/hook alternatives, calendars or supplied-data reviews. It consumes the same project/topic paths. A normal single-video request does not need a new strategy report or all historical metrics. For a request to study human narration, deliver sourced observations of complete examples; distinguish examples of language from examples of popularity and do not force another script into that research request. Final viewing/claim review remains Codex's responsibility; ASR does not certify voice naturalness.
+
+## Boundaries
+
+No paid APIs, credit-based generators, data subscriptions or cloud renderers; never read model keys or switch to a paid fallback. Existing Codex usage, equipment and electricity are outside that claim. Preserve originals and source/rights declarations. Real-operation requests require actual application/command actions and results; cards or a custom viewer cannot substitute. `cards` is legacy, selected only when requested.
+
+Publishing, account interactions and recurring jobs are separate user-authorized actions. Deliver the requested draft or finished artifacts with honest verification limits; no viral-performance promises.

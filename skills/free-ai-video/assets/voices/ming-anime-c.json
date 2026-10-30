@@ -1,0 +1,15 @@
+{
+  "id": "anime-c",
+  "label": "二次元细声 C · 用户已选定",
+  "reference_audio": "ming-anime-c.wav",
+  "reference_sha256": "1c5e00042df55d1ca66a0fa8c5325ba51900611e3f8c1250cbbf7631bf957844",
+  "reference_text": "欸，先别划走呀。今天这个人工智能新玩法，还挺有意思的。你猜，它能帮我们省掉哪一步？",
+  "source": "Original locally synthesized voice, selected by the user on 2026-10-25; not a human recording.",
+  "model": "inclusionAI/Ming-3.0-tts-0.5B",
+  "repository_commit": "028c1eace193e7acdb256453da89b6e9207e052b",
+  "source_task": "VOICE_DESIGN",
+  "source_seed": 303,
+  "source_style": "性别：女性。年龄：二十岁。音色：娇嫩细软的二次元萝莉声线，轻盈、甜美、干净，带少量自然气声。音高：偏高但圆润。语速：中慢速，短句之间自然停顿。音量：轻声近讲。口音：标准普通话。情绪：放松、好奇，含着轻轻的笑意。语调：像熟悉的朋友随口分享，句子有轻重和起伏，句尾柔和收住。",
+  "reuse_task": "TTS",
+  "note": "Reuse the actual waveform and exact transcript to retain the chosen timbre. Do not randomly redesign the voice for every scene. Slow/high BASIC controls were not reliable in the local trial; punctuation, short clauses and an explicitly recorded tempo adjustment are available alternatives."
+}
