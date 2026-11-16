@@ -13,6 +13,8 @@ Use this as the single entrypoint from AI story discovery to a Chinese short vid
 |---|---|
 | Current AI news | [News research](references/ai-news.md); model launches also use [model comparisons/pricing](references/model-launch.md) |
 | Chinese narration, hooks, rewrites | [Attention and payoff](references/attention-and-payoff.md) for news angles; [spoken news writing](references/spoken-news-writing.md) to compose continuous speech; [whole-script structure](references/full-script-structure.md) to check development and closure. For human-video analysis or repeated AI-sounding feedback, read [observed human cases](references/human-video-cases.md); then [editorial continuity](references/editorial-continuity.md) for pictures/pacing |
+| AI hardware, desktop pets or playful gadgets | [Comparable gadget videos](references/gadget-spoken-cases.md) for observed short-form results, physical interactions and explanations motivated by an actual task; use alongside the spoken-writing reference |
+| Study the specified Douyin account, or learn narration together with footage/effects | [AI科技推送 full-video cases](references/douyin-wanan-cases.md); distinguish observed frames from proposed implementation |
 | Real recordings or montage | [Recording and editing](references/recording-and-editing.md) |
 | Write a production project | [Project fields](references/project-contract.md) and [shots/media](references/shot-contract.md) |
 | Voice setup or tuning | [Local Ming](references/local-tts.md) |
