@@ -74,7 +74,7 @@ For native Windows apps, `record-window --title <exact-window-title> --seconds 1
 
 ## Learn from source editing without inventing capabilities
 
-For the specified Douyin account and frame-timed examples, read [AI科技推送 cases](douyin-wanan-cases.md). Plan the visible action/evidence, where the viewer should look, and why a highlight or layer starts and stops in the existing editing record. A still is useful when its evidence remains readable; source playback and screenshots are different material types. Keep a continuous action until its result and use simultaneous views when a comparison needs both results present. Exact layer entrances, callout lines or two-video layouts may need a separately composed clip: current shot fields do not acquire those features merely because a reference describes them. Use documented fields, retain the source/processing lineage and inspect the encoded timing.
+For the requested Douyin creator and frame-timed examples, read [creator case observations](douyin-wanan-cases.md). Plan the visible action/evidence, where the viewer should look, and why a highlight or layer starts and stops in the existing editing record. A still is useful when its evidence remains readable; source playback and screenshots are different material types. Keep a continuous action until its result and use simultaneous views when a comparison needs both results present. Exact layer entrances, callout lines or two-video layouts may need a separately composed clip: current shot fields do not acquire those features merely because a reference describes them. Use documented fields, retain the source/processing lineage and inspect the encoded timing.
 
 ## Automatic assembly
 

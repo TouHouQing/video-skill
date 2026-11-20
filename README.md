@@ -55,7 +55,7 @@ python scripts/factory.py media doctor
 
 已附带 Ming C「二次元细声」的原创合成参考音频及其文本、哈希和来源记录。保留选定音色时必须使用实际参考音频，不能只重写声线提示词。
 
-**Ming 的模型权重和推理环境不在仓库里，需要单独配置。** 当前适配器使用 `inclusionAI/Ming-3.0-tts-0.5B`；Windows 经 WSL 调用 Linux CUDA 环境，运行目录约定为 Linux 用户家目录下的 `.local/share/free-ai-video/ming3`。安装所需目录、配置字段和限制见 [本地配音说明](skills/free-ai-video/references/local-tts.md)。基础 doctor 通过不代表 Ming 已可用；实际配音还需单独验证。
+**Ming 的模型权重和推理环境不在仓库里，需要单独配置。** 跨平台适配器使用 `inclusionAI/Ming-3.0-tts-0.5B`，Windows 经 WSL 调用 Linux CUDA 环境；Apple Silicon 优先使用已经验证的 `mlx-community/Ming-3.0-tts-0.5B-8bit` 与 `mlx-audio` 本地路径。安装所需目录、版本下限、参考音频校验和限制见 [本地配音说明](skills/free-ai-video/references/local-tts.md)。基础 doctor 通过不代表 Ming 已可用；实际配音还需单独验证。
 
 Ming 失败会停止，不会悄悄更换声线。VoxCPM2 只是后备方向，未打包成自动可用后端。其他已有模式（Edge 在线语音、Windows 本地 SAPI）必须显式选择；Edge 需要网络，不是本地模型。
 

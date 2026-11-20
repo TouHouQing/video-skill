@@ -2,9 +2,27 @@
 
 The user selected C / 二次元细声 on 2026-10-25. The original generated sample is packaged at `assets/voices/ming-anime-c.wav`; its exact transcript, SHA-256, voice-design description and seed are in `ming-anime-c.json`. It is an original synthesized adult female voice. Its direction is fine, light, soft, mildly breathy and anime-like. Preserve this selected timbre with task `TTS`, the waveform and its exact transcript. A repeated style prompt alone can change the speaker.
 
+## Preferred Apple Silicon path: Ming MLX
+
+On the tested Apple Silicon machine, use `mlx-community/Ming-3.0-tts-0.5B-8bit` through `mlx-audio` for local narration. The verified run used `mlx-audio 0.6.6`, revision `d0d1da6f627e4b3f20cc2db6ba4aee86d45343ad`, a GPU device, 44.1 kHz output and about 1.74–1.81 GiB peak MLX memory for the short samples. The converted checkpoint is an 8-bit local copy; keep its model card/license and revision in the job provenance.
+
+Install a current MLX Audio release before inferring:
+
+```bash
+python3 -m pip install -U "mlx-audio>=0.6.1"
+mlx_audio.tts.generate --model mlx-community/Ming-3.0-tts-0.5B-8bit \
+  --text "这里替换成已经复核过的中文口播。" \
+  --ref_audio assets/voices/ming-anime-c.wav \
+  --ref_text "这里填参考音频的准确逐字稿。"
+```
+
+`mlx-audio 0.6.0` or earlier can load the checkpoint but may speak the wrong text; do not accept a file merely because the command exited successfully. Confirm the spoken words, non-silence, full decode and 44.1 kHz sample rate. Write dates, numbers and model names in speakable Chinese before synthesis because the MLX path does not use the optional `pynini` normalizer. Split long narration into measured cues when a subtitle or shot boundary depends on a particular clause, and record per-cue seed, duration, model revision and reference hash. The tested path reports `provider: ming-mlx`; it must not silently fall back to Edge, SAPI or another voice when MLX fails.
+
+The MLX checkpoint supports reference-audio voice cloning. Always pass the exact reference transcript and hash-check `assets/voices/ming-anime-c.wav` against `assets/voices/ming-anime-c.json`; a rewritten prompt is not an equivalent substitute. Keep subjective listening separate from automated ASR: transcription can catch wrong words, but only a person can judge whether the delivery sounds natural enough for publication.
+
 ## Runtime and project fields
 
-The adapter uses `inclusionAI/Ming-3.0-tts-0.5B`. The reference installation used WSL Ubuntu-22.04 with CUDA. Each machine must install its own runtime; the source repository does not include model weights, Python environments or `.runtime/ming.json`. `.runtime/voice-default.json` stores local preferences rather than a requirement for every other machine. The 0.5B name describes the backbone; do not claim the whole checkpoint is 0.5B or assume the tiny model is smaller.
+The cross-platform adapter uses `inclusionAI/Ming-3.0-tts-0.5B`; its reference installation used WSL Ubuntu-22.04 with CUDA. Apple Silicon projects should prefer the MLX path above when it is available. Each machine must install its own runtime; the source repository does not include model weights, Python environments or `.runtime/ming.json`. `.runtime/voice-default.json` stores local preferences rather than a requirement for every other machine. The 0.5B name describes the backbone; do not claim the whole checkpoint is 0.5B or assume the tiny model is smaller.
 
 The current runner requires the following layout inside the Linux user's home directory; `--runtime-root` validates this location rather than relocating it:
 
